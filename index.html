@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>भूमि क्षेत्रफल रूपान्तरणकर्ता</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>भूमि क्षेत्रफल रूपान्तरणकर्ता</h1>
+        
+        <div class="toggle">
+            <button onclick="showInputs('ropani')">रोपानी प्रणाली</button>
+            <button onclick="showInputs('bigha')">बिगाहा प्रणाली</button>
+            <button onclick="showInputs('squareFeet')">चौरस फुट प्रणाली</button>
+            <button onclick="showInputs('squareMeter')">चौरस मिटर प्रणाली</button>
+        </div>
+
+        <div id="ropaniInputs" class="input-section">
+            <h2>रोपानीबाट रूपान्तरण गर्नुहोस्</h2>
+            <input type="number" id="ropani" placeholder="रोपानी">
+            <input type="number" id="aana" placeholder="आना">
+            <input type="number" id="paisa" placeholder="पैसा">
+            <input type="number" id="dam" placeholder="दाम">
+        </div>
+
+        <div id="bighaInputs" class="input-section">
+            <h2>बिगाहाबाट रूपान्तरण गर्नुहोस्</h2>
+            <input type="number" id="bigha" placeholder="बिगाहा">
+            <input type="number" id="katha" placeholder="कट्ठा">
+            <input type="number" id="dhur" placeholder="धुर">
+        </div>
+
+        <div id="squareFeetInputs" class="input-section">
+            <h2>चौरस फुटबाट रूपान्तरण गर्नुहोस्</h2>
+            <input type="number" id="squareFeet" placeholder="चौरस फुट">
+        </div>
+
+        <div id="squareMeterInputs" class="input-section">
+            <h2>चौरस मिटरबाट रूपान्तरण गर्नुहोस्</h2>
+            <input type="number" id="squareMeter" placeholder="चौरस मिटर">
+        </div>
+
+        <button class="convert-button" onclick="convert()">रूपान्तरण गर्नुहोस्</button>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
